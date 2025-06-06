@@ -41,9 +41,7 @@ export default function Header({
                         }}
                         type="button"
                     >
-                        <span className="hamburger-box">
-                            <span className="hamburger-inner"></span>
-                        </span>
+                        <i className="fa-solid fa-bars" style={{ fontSize: "1.7rem" }}></i>
                     </button>
                 </div>
                 <nav id="nav-menu" style={menuOpen ? { display: "block" } : {}}>

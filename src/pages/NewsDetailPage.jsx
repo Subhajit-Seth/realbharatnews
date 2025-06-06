@@ -215,6 +215,15 @@ function RelatedNewsCard({ news }) {
                             })}
                     </span>
                 </div>
+                <button
+                    className="read-more-btn"
+                    onClick={() => {
+                        localStorage.setItem("selectedArticle", JSON.stringify(article));
+                        window.location.href = "/news-detail";
+                    }}
+                >
+                    Read More
+                </button>
             </div>
         </div>
     );
